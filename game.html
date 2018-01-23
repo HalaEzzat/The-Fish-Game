@@ -1,0 +1,154 @@
+<html>
+<head>
+<style type="text/css">
+	.cont2{
+			border: 5px black solid ;
+            width:250px;
+			height:250px;
+			margin-left: 1080px;
+
+		margin-top: 50px;
+		
+		margin-right: 10px;
+		
+		margin-bottom:0px;
+	
+	}
+	.container
+	{
+	float:left;
+		width: 990px ;
+
+		height: 550px ;
+		
+		border: 5px black solid ;
+
+		margin-left: 50px;
+
+		margin-top: 0px;
+		
+		margin-right: 980px;
+		
+		margin-bottom:10px;
+		
+		background-image: url("img/9b.jpg");
+		background-size:cover 
+		}
+		p {
+    font-family: "Times New Roman", Times, serif;
+	 font-style: italic;
+	 font-size: 15px;
+	  font-weight: bold;
+}
+
+
+	.button1 {
+		position: relative;
+		
+		margin-left: 210px;
+
+		margin-top: 300px;
+		
+		margin-right: 100px;
+		
+		margin-bottom:10px;
+	}
+	 table {
+	 
+	position: absolute;
+	margin-left:50px;
+	margin-top: 50px;
+	
+}
+	 .color {
+    border: 1px solid black;
+	width:50px;
+	height:170px;
+	bgcolor:"green";
+}
+
+.flip{
+ -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.btn2{
+position: relative;
+		
+		margin-top: 0px;
+		margin-bottom: 50px;
+
+		margin-left: 30px;
+		
+}
+button {
+	width:150px;
+  height:30px;
+  display:inline-block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  text-shadow:1px 1px 0px #07526e;
+  padding-top:6px;
+  margin-left:auto;
+  margin-right:auto;
+  left:30px;
+  position:relative;
+  cursor:pointer;
+  border: none;
+  background: #109bce;
+  background-image: linear-gradient(bottom, rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 5px 0px 0px #07526e, 0px 10px 5px #999;
+}
+
+button:active {
+  top:3px;
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 5px 3px #999;
+}
+
+button:before {
+  font-family: 'socialfont';
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: normal;
+  color: #fff;
+  width:85px;
+  height:90px;
+  display:block;
+  position:absolute;
+  padding-top:10px;
+  top:10px;
+  text-shadow: 1px 1px 2px #07526e;
+
+}
+
+button:active:before {
+  top: 7px;
+  font-size: 50px;
+  text-shadow: 0px 3px 0px #07526e, 0px 5px 1px #07526e/*, 3px 0px 1px #07526e, 3px 3px 1px #07526e,
+     -2px 0px 1px #68cff2*/;
+}
+</style>    
+</head>
+<body>
+<div class="container" id="container">
+ <button class="button1" onclick="start()">Start game</button> 
+ <button  onclick="instruct()">instructions</button> 
+
+</div>
+<div class="cont2" id="cont2">
+<table id='tbl'></table>
+</div>
+<audio controls hidden id="music">
+			<source src="BGmusic/music.mp3"  hidden type="audio/mpeg">
+			</source>
+		</audio>
+<script type="text/javascript" src="js/game.js"></script>
+
+</body>
+</html>
